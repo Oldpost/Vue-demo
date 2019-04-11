@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue 数据响应原理实现</title>
+</head>
+<body>
+  <div id="el">
+    <h1>Vue 数据响应原理实现</h1>
+    <div>
+      <div v-text="myText"></div>
+      <div v-text="myBox"></div>
+      <input type="text" v-model="myBox">
+    </div>
+  </div>
+  <script src="./vue.JS"></script>
+  <script>
+    const vue=new Vue({
+      el:"#el",
+      data:{
+        myText:"起风了，要努力生存",
+        myBox:"黯淡了刀光剑影，远去了鼓角争鸣"
+      }
+    }) 
+  </script>
+</body>
+</html>
